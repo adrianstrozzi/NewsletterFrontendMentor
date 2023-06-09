@@ -12,16 +12,17 @@
 
 <body>
   <div class="success-modal" id="successModal">
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 21 21">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 21 21" class="modal-check-icon">
       <g fill="none">
         <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
         <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
       </g>
     </svg>
-    <h2>Thank you for subscribing!</h2>
-    <p>A confirmation has been sent to <span id="storedEmail">.</span>Please open it and click the button inside
-      confirm your subscription</p>
-    <button type="submit" id="dismissModalBtn">Dismiss message</button>
+    <h2>Thanks for subscribing!</h2>
+    <p>A confirmation has been sent to <span class="stored-email" id="storedEmail"></span>Please open it and click the
+      button inside
+      to confirm your subscription.</p>
+    <button type="submit" class="dismiss-modal-btn" id="dismissModalBtn">Dismiss message</button>
   </div>
   <div class="main-container" id="mainContainer">
     <div class="form-container">
@@ -49,7 +50,7 @@
           </svg>And much more!</li>
       </ul>
       <p class="email-address">Email address</p>
-      <input type="email">
+      <input type="email" id="emailInput">
       <button type="submit" id="suscribeButton">Suscribe to monthly newsletter</button>
     </div>
     <div class="image-container">
