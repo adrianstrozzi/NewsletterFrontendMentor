@@ -141,7 +141,8 @@ p .email-error {
 }
 
 .image-format {
-  border-radius: 0px;
+  width: 400px;
+  height: 550px;
 }
 
 .email-address {
