@@ -53,6 +53,11 @@ input:focus {
   outline: none;
 }
 
+input:hover {
+  cursor: pointer;
+}
+
+
 li {
   display: inline-block;
   margin-bottom: 15px;
@@ -74,6 +79,7 @@ li svg {
 p .email-error {
   color: rgb(251, 69, 69);
   float: right;
+  /* color: #f6c3c4; */
 }
 
 .modal-check-icon {

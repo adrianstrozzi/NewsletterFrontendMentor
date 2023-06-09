@@ -6,6 +6,7 @@ let emailInput = document.getElementById("emailInput")
 let storedEmail = document.getElementById("storedEmail")
 let emailError = document.getElementById("emailError")
 
+
 suscribeButton.onclick = function () {
   if (mainContainer.style.display !== "none", emailInput.value.match(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/)) {
     mainContainer.style.display = "none"
@@ -14,11 +15,12 @@ suscribeButton.onclick = function () {
   } else {
     mainContainer.style.display !== "flex"
     emailError.innerHTML = "Valid email required"
-    emailInput.style.border = "rgb(251, 69, 69)"
-    emailInput.style.background = "rgb(251, 69, 69)"
-    emailInput.style.opacity = "0.3"
-    emailInput.style.color = "rgb(183, 17, 17)"
-    emailInput.style.fontWeight = "bolder"
+    emailInput.style.borderColor = "red"
+    emailInput.style.borderStyle = "solid"
+    emailInput.style.background = "#f6c3c4"
+    emailInput.style.opacity = "0.6"
+    emailInput.style.color = "red"
+    emailInput.style.fontWeight = "700"
   }
 }
 
@@ -27,6 +29,13 @@ dismissModalBtn.onclick = function () {
     successModal.style.display = "none"
     mainContainer.style.display = "flex"
     emailInput.value = ""
+    emailInput.style.borderColor = ""
+    emailInput.style.borderStyle = ""
+    emailInput.style.background = ""
+    emailInput.style.opacity = ""
+    emailInput.style.color = ""
+    emailInput.style.fontWeight = ""
+    emailError.innerHTML = ""
   } else {
     successModal.style.display = "none"
   }
