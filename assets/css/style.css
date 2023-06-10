@@ -153,7 +153,7 @@ p .email-error {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 375px) {
   body {
     min-height: 0vh;
     margin: 0;
@@ -174,15 +174,15 @@ p .email-error {
     margin: 0;
     padding: 0;
     border-radius: 0px;
-    height: 100%;
+    height: 800px;
+    position: absolute;
   }
   .form-container {
     flex-direction: column;
     font-size: 1rem;
     max-width: 100%;
-    min-height: max-content;
-    order: 2;
     padding: 0;
+    order: 2;
     margin: 30px;
   }
   .image-container-desktop {
@@ -192,13 +192,14 @@ p .email-error {
   .image-container-mobile {
     display: flex;
     flex-direction: column;
+    order: 1;
   }
 
   .success-modal {
     font-size: 0.8em;
     flex-direction: column;
     border-radius: 0px;
-    min-height: 100%;
+   height: 800px;
     border-radius: 0px;
     justify-content: center;
     max-width: 100%;
