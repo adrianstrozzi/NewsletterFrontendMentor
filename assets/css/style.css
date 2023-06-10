@@ -175,7 +175,6 @@ p .email-error {
     padding: 0;
     border-radius: 0px;
     height: 100%;
-    position: fixed;
   }
   .form-container {
     flex-direction: column;
@@ -206,7 +205,6 @@ p .email-error {
     padding: 50px;
     width: 340px;
     margin: 0;
-    position: fixed;
   }
 
   .success-modal button {
